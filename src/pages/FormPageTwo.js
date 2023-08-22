@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
 
-const FormPageTwo = ({ setActivePage }) => {
+import { Link, useOutletContext  } from 'react-router-dom';
+
+const FormPageTwo = () => {
+
+  const [ setActivePage ] = useOutletContext();
+
   return (
     <div className='pages pageTwo' >
         <h1>FormPagetwo</h1>

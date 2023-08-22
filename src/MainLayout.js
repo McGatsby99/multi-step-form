@@ -1,11 +1,14 @@
 
 import { Outlet } from 'react-router-dom'
+import { useState } from 'react';
 
 
-const MainLayout = ({ activePage }) => {
+const MainLayout = () => {
+
+  const [activePage, setActivePage] = useState('1');
 
   return (
-    <>
+    <div className='container'>
         <nav>
           <div class="nav-container">
             <div class="steps">
@@ -38,8 +41,8 @@ const MainLayout = ({ activePage }) => {
             </div>
           </div>
         </nav>
-        <Outlet />
-    </>
+        <Outlet context={[setActivePage] }/>
+      </div>
   )
 }
 
