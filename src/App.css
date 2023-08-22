@@ -66,10 +66,55 @@ nav {
   background-repeat: no-repeat;
 } 
 
-/* nav img{
-  width: 100%;
-  height: 100%;
-} */
+.nav-container{
+  margin: 40px 20px;
+  color: var(--light-gray);
+}
+
+.steps{
+  /* border: var(--border-green); */
+  display: flex;
+  margin-top: 20px;
+}
+
+.page-number{
+  display: inline-block;
+  /* width: 30px;
+  height: 30px; */
+  padding: 8px 13px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white; 
+  text-align: center;
+  position: relative;
+}
+
+.active{
+  background-color: var(--light-blue);
+  color: var(--marine-blue);
+}
+
+.text{
+  display: inline-block;
+  margin-left: 10px;
+  /* border: var(--border-orange); */
+  position: relative;
+  bottom: 0px;
+}
+
+.text p:first-child{
+  font-size: 0.7rem;
+  margin-top: 3px;
+  margin-bottom: 2px;
+}
+
+.category{
+  color: var(--white);
+  font-weight: 500;
+}
+
+
+/* right side */
 
 .pages {
   height: 100%;
