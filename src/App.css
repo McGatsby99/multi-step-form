@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+:root {
+  /* Primary colors */
+
+--marine-blue: hsl(213, 96%, 18%);
+--purplish-blue: hsl(243, 100%, 62%);
+--pastel-blue: hsl(228, 100%, 84%);
+--light-blue: hsl(206, 94%, 87%);
+--strawberry-red: hsl(354, 84%, 57%);
+
+/* Neutral Colors */
+
+--cool-gray: hsl(231, 11%, 63%);
+--light-gray: hsl(229, 24%, 87%);
+--magnolia: hsl(217, 100%, 97%);
+--alabaster: hsl(231, 100%, 99%);
+--white: hsl(0, 0%, 100%);
+
+--border-red: 1px solid red;
+--border-blue: 1px solid blue;
+--border-orange: 1px solid orange;
+--border-green: 1px solid green;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family:'UbuntuRegular', monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p{
+  font-size: 16px;
+}
+
+#root{
+  height: 95vh;
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  display: flex;
+  justify-content: space-between;
+  border: var(--border-blue);
+  height: 600px;
+  width: 85%;
+  max-width: 900px;
+  min-width: 650px;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  height: 100%;
+  width: 30%;
+  border: var(--border-green);
+}
+
+.pages {
+  height: 100%;
+  width: 65%;
+  border: var(--border-red);
+  
 }
