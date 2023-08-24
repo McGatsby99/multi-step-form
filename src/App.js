@@ -9,6 +9,8 @@ import MainLayout from './MainLayout';
 import FormPageOne from './pages/FormPageOne';
 import FormPageTwo from './pages/FormPageTwo';
 import FormPageThree from './pages/FormPageThree';
+import Summary from './pages/Summary';
+import ThankYou from './pages/ThankYou';
 
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -16,7 +18,8 @@ const router = createBrowserRouter(createRoutesFromElements(
          <Route index element={<FormPageOne />}/> 
          <Route path='/pageTwo' element={<FormPageTwo />} /> 
          <Route path='/pageThree' element={<FormPageThree />} /> 
-         {/*<Route />  errors */}
+         <Route path='/pageFour' element={<Summary/>}/> 
+         <Route path='/pageFive' element={<ThankYou/>} /> 
        </Route>
 ))
 
