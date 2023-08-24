@@ -10,11 +10,23 @@ const Summary = () => {
         <p>Double-check everything looks OK before confirming</p>
         <Form className="form pageFourSummary">
           <div className="summary-container">
-            <div className="plan-summary">plan</div>
-            <hr/>
-            <div className="extras-summary">add-ons</div>
+            <div className="plan-summary">
+              <p>Arcade (yearly)</p>
+              <NavLink className='change'>change</NavLink>
+              <p className="summary-price">$90/yr</p>
+              <hr/>
+              </div>
+            
+            <div className="extras-summary">
+              <p>online service</p>
+              <p className="extras-price">+$10/yr</p>
+            </div>
           </div>
-          <div className="total">total</div>
+
+          <div className="total">
+            <p>Total (per year)</p>
+            <p className="total-cost">$120/yr</p>
+          </div>
         </Form>
         <NavLink className='go-back' to='/pageThree' onClick={() => setActivePage('3')}>Go back</NavLink>
         <NavLink className='submit' to='/' onClick={() => setActivePage('4')}>submit</NavLink>

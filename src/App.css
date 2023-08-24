@@ -327,3 +327,71 @@ input:checked + .slider:before {
   top: 30px;
   float: right;
 }
+
+/* page 4 */
+
+.summary-container{
+  border: var(--border-red);
+  border-radius: 10px;
+}
+
+.plan-summary{
+  /* border: var(--border-blue); */
+  height: 60Px;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+}
+
+.plan-summary p{
+  display: inline-block;
+}
+
+.change{
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  background-color: var(--white);
+}
+
+.summary-price{
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+hr{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.extras-summary{
+  /* border: var(--border-blue); */
+  height: 30Px;
+  /* border-radius: 10px; */
+  margin: 20px;
+  position: relative;
+}
+
+.extras-summary p{
+  display: inline-block;
+}
+
+.extras-price{
+  float: right;
+}
+
+.total{
+  margin: 20px;
+  /* border: var(--border-blue); */
+  position: relative;
+}
+
+.total p{
+  display: inline-block;
+}
+
+.total-cost{
+  float: right;
+}
