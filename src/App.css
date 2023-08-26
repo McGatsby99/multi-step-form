@@ -29,12 +29,15 @@
 
 body{
   font-family:'UbuntuRegular', monospace;
+  background-color: var(--magnolia);
 }
 
 p{
   font-size: 16px;
   color: var(--cool-gray);
 }
+
+
 
 #root{
   height: 95vh;
@@ -45,9 +48,10 @@ p{
 }
 
 .container{
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
-  border: var(--border-blue);
+  /* border: var(--border-blue); */
   height: 500px;
   width: 85%;
   max-width: 900px;
@@ -59,7 +63,7 @@ p{
 nav {
   height: 100%;
   width: 30%;
-  border: var(--border-green);
+  /* border: var(--border-green); */
   border-radius: 20px;
   background-image: url('./assets/images/bg-sidebar-desktop.svg');
   background-size: cover;
@@ -115,7 +119,7 @@ nav {
 }
 
 
-/* right side */
+/* right side: page one */
 
 .pages {
   height: 100%;
@@ -132,27 +136,34 @@ nav {
   margin: 20px 0px;
 }
 
+
 h1{
   margin-bottom: 10px;
 }
 
-input{
+.pageOneForm input{
   display: block;
-  width: 99%;
+  width: 96%;
   margin-bottom: 30px;
   margin-top: 5px;
   border-radius: 5px;
   height: 40px;
+  border-color: var(--light-gray);
+  padding-left: 10px;
 }
 
-.submit{
+.next{
+  width: 80px;
+  color: var(--white);
+  background-color: var(--marine-blue);
   text-decoration: none;
-  border: var(--border-green);
-  padding: 10px 15px;
+  /* border: var(--border-green); */
+  padding: 15px;
   border-radius: 5px;
   position: absolute;
   bottom: 20px;
   right: 0px;
+  text-align: center;
 }
 
 /* page two */
@@ -167,9 +178,19 @@ input{
   display: inline-block;
   height: 140px;
   /* width: 80px; */
-  border: var(--border-blue);
+  border: 2px solid var(--light-gray);
   margin: 20px 0px;
   border-radius: 10px;
+}
+
+.select:hover{
+  border: 2px solid var(--purplish-blue);
+  background-color: var(--magnolia);
+}
+
+.select:active{
+  border: 2px solid var(--purplish-blue);
+  background-color: var(--magnolia);
 }
 
 .content{
@@ -184,18 +205,22 @@ input{
   bottom: 0;
 }
 
+
 .content section p{
   font-weight: 700;
+  color: var(--marine-blue);
 }
 
 .content section span{
   display: inline-block;
   margin-top: 5px;
   font-size: 0.8rem;
+  color: var(--cool-gray);
 }
 
 .toggle{
-  border: var(--border-green);
+  /* border: var(--border-green); */
+  background-color: var(--magnolia);
   grid-column-start: 1;
   grid-column-end: 4;
   text-align: center;
@@ -208,7 +233,7 @@ input{
  /* border:var(--border-orange); */
  position: relative;
  margin: 0 20px ;
- bottom: 10px;
+ bottom: -5px;
  font-size: 18px;
 
 }
@@ -241,7 +266,7 @@ input{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:  #2196F3;
+  background-color: var(--marine-blue);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -259,7 +284,7 @@ input{
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--marine-blue);
 }
 
 input:focus + .slider {
@@ -281,17 +306,23 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
 .go-back{
   position: absolute;
   bottom: 20px;
   left: 0;
   background-color: white;
+  text-decoration: none;
+}
+
+.go-back:hover{
+  text-decoration: underline;
 }
 
 /* page three */
 
 .add-ons{
-  border: var(--border-green);
+  border: 2px solid var(--light-gray);
   /* min-width: 300px; */
   margin-bottom: 20px;
   height: 80px;
@@ -299,12 +330,16 @@ input:checked + .slider:before {
   border-radius: 10px;
 }
 
+.checked{
+  background-color: var(--alabaster);
+  border: 2px solid var(--marine-blue);
+}
+
 .checkbox{
   height: 20px;
   width: 20px;
   display: inline-block;
   margin: 30px 20px;
-  border: var(--border-orange);
 }
 
 .add-ons label{
@@ -326,13 +361,15 @@ input:checked + .slider:before {
   right: 20px;
   top: 30px;
   float: right;
+  color: var(--cool-gray);
 }
 
 /* page 4 */
 
 .summary-container{
-  border: var(--border-red);
+  /* border: var(--border-red); */
   border-radius: 10px;
+  background-color: var(--alabaster);
 }
 
 .plan-summary{
@@ -345,6 +382,8 @@ input:checked + .slider:before {
 
 .plan-summary p{
   display: inline-block;
+  color: var(--marine-blue);
+  font-weight: 700;
 }
 
 .change{
@@ -352,6 +391,7 @@ input:checked + .slider:before {
   left: 0px;
   top: 20px;
   background-color: var(--white);
+  color: var(--cool-gray);
 }
 
 .summary-price{

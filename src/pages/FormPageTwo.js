@@ -61,7 +61,7 @@ const FormPageTwo = () => {
           </div>
         </Form>
         <NavLink className='go-back' to='/' onClick={() => setActivePage('1')}>Go back</NavLink>
-        <NavLink className='submit' to='/pageThree' onClick={() => setActivePage('3')}>Next</NavLink>
+        <NavLink className='next' to='/pageThree' onClick={() => setActivePage('3')}>Next Step</NavLink>
     </div>
   )
 }

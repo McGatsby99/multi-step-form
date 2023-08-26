@@ -1,4 +1,4 @@
-import { Form, Link, NavLink, useOutletContext } from 'react-router-dom';
+import { Form, NavLink, useOutletContext } from 'react-router-dom';
 
 
 const FormPageOne = () => {
@@ -7,17 +7,17 @@ const FormPageOne = () => {
 
   return (
     <div className='pages pageOne'>
-        <h1>Personal Info</h1>
+        <h1>Personal info</h1>
         <p>Please provide your name, email address and phone number</p>
         <Form className='form pageOneForm'>
-          <label htmlFor="name">name</label>
-          <input />
-          <label htmlFor="email">email</label>
-          <input />
-          <label htmlFor="phone number">phone number</label>
-          <input />
+          <label htmlFor="name">Name</label>
+          <input type='text' placeholder='e.g. Ayanda'/>
+          <label htmlFor="email">Email Address</label>
+          <input type='email' placeholder='e.g. ayanda@email,com'/>
+          <label htmlFor="phone number">Phone Number</label>
+          <input type='text' placeholder='+27 727 262 328'/>
         </Form>
-        <NavLink className='submit' to='/pageTwo' onClick={() => setActivePage('2')}>Next Step</NavLink>
+        <NavLink className='next' to='/pageTwo' onClick={() => setActivePage('2')}>Next Step</NavLink>
     </div>
   )
 }

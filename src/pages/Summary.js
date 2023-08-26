@@ -11,7 +11,7 @@ const Summary = () => {
         <Form className="form pageFourSummary">
           <div className="summary-container">
             <div className="plan-summary">
-              <p>Arcade (yearly)</p>
+              <p>Arcade (Yearly)</p>
               <NavLink className='change'>change</NavLink>
               <p className="summary-price">$90/yr</p>
               <hr/>
@@ -29,7 +29,7 @@ const Summary = () => {
           </div>
         </Form>
         <NavLink className='go-back' to='/pageThree' onClick={() => setActivePage('3')}>Go back</NavLink>
-        <NavLink className='submit' to='/' onClick={() => setActivePage('4')}>submit</NavLink>
+        <NavLink className='next' to='/' onClick={() => setActivePage('1')}>Confirm</NavLink>
     </div>
   )
 }
