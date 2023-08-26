@@ -435,3 +435,14 @@ hr{
 .total-cost{
   float: right;
 }
+
+/* thank you page five */
+
+.pageFive{
+  text-align: center;
+}
+
+.img-thanks{
+  margin-top: 33%;
+  margin-bottom: 20px;
+}

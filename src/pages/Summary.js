@@ -29,7 +29,7 @@ const Summary = () => {
           </div>
         </Form>
         <NavLink className='go-back' to='/pageThree' onClick={() => setActivePage('3')}>Go back</NavLink>
-        <NavLink className='next' to='/' onClick={() => setActivePage('1')}>Confirm</NavLink>
+        <NavLink className='next' to='/pageFive' onClick={() => setActivePage('1')}>Confirm</NavLink>
     </div>
   )
 }
